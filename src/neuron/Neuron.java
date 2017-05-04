@@ -2,12 +2,12 @@ package neuron;
 
 import data.*;
  
-public class Neuron extends Connections {
+public class Neuron extends Connections implements Information {
 	private static final long serialVersionUID = -6816998969748123329L;
 	
-	Information data;
-	Connections conn;
-	TypeOfNeuron typeName;
+	private Information data;
+	private Connections conn;
+	private TypeOfNeuron typeName;
 	
 	public Neuron(Information data, Connections conn, TypeOfNeuron typeName){
 		data = this.data;
